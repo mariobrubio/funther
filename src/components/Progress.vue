@@ -14,16 +14,16 @@
             <v-card-text>
               <span class="headline">Beginner</span>
               <div class="text-xs-center">
-                      <v-rating
-                        :value="value1"
-                        color="amber"
-                        dense
-                        half-increments
-                        readonly
-                        size="20"
-                      ></v-rating>
-                      
-                    </div>
+                <v-rating
+                  :value="value1"
+                  color="amber"
+                  dense
+                  half-increments
+                  readonly
+                  size="20"
+                ></v-rating>
+                
+              </div>
             </v-card-text>
             <v-divider></v-divider>
                
@@ -38,15 +38,15 @@
             <v-card-text>
               <span class="headline">Intermediate</span>
               <div class="text-xs-center">
-                      <v-rating
-                        :value="value2"
-                        color="amber"
-                        dense
-                        half-increments
-                        readonly
-                        size="20"
-                      ></v-rating>
-                    </div>
+                <v-rating
+                  :value="value2"
+                  color="amber"
+                  dense
+                  half-increments
+                  readonly
+                  size="20"
+                ></v-rating>
+              </div>
             </v-card-text>
             <v-divider></v-divider>
                
@@ -61,16 +61,16 @@
             <v-card-text>
               <span class="headline">Expert</span>
               <div class="text-xs-center">
-                      <v-rating
-                        :value="value3"
-                        color="amber"
-                        dense
-                        half-increments
-                        readonly
-                        size="20"
-                      ></v-rating>
-                      
-                    </div>
+                <v-rating
+                  :value="value3"
+                  color="amber"
+                  dense
+                  half-increments
+                  readonly
+                  size="20"
+                ></v-rating>
+                
+              </div>
             </v-card-text>
             <v-divider></v-divider>
                
@@ -193,50 +193,6 @@ export default {
         420,
         490,
         600
-      ],
-      trending: [
-        {
-          subheading: 'Sales',
-          headline: '2,55',
-          caption: 'increase',
-          percent: 15,
-          icon: {
-            label: 'trending_up',
-            color: 'success'
-          },
-          linear: {
-            value: 15,
-            color: 'success'
-          }
-        },
-        {
-          subheading: 'Revenue',
-          headline: '6,553',
-          caption: 'increase',
-          percent: 10,
-          icon: {
-            label: 'trending_down',
-            color: 'error'
-          },
-          linear: {
-            value: 15,
-            color: 'error'
-          }
-        },
-        {
-          subheading: 'Orders',
-          headline: '5,00',
-          caption: 'increase',
-          percent: 50,
-          icon: {
-            label: 'arrow_upward',
-            color: 'info'
-          },
-          linear: {
-            value: 50,
-            color: 'info'
-          }
-        }
       ],
       trending2: [
         {

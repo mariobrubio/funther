@@ -57,10 +57,10 @@ export default {
   data () {
     return {
       items: [
-        { active: true, title: 'Back in Black', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg', file: new Audio('https://online.freemusicdownloads.world/get-file?fn=AC_DC+-+Back+In+Black+%28Official+Music+Video%29&pl=False&dt=MP3&vid=pAgnJDJN4VA'),
+        { active: true, title: 'Back in Black', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg', file: new Audio('static/black.mp3'),
           isPlaying: false },
-        { active: true, title: 'Tremor', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg', file: new Audio('https://online.freemusicdownloads.world/get-file?fn=Martin+garrix+tremor+%28original+mix%29&pl=False&dt=MP3&vid=jdPrs3iGj4c'), isPlaying: false },
-        { active: true, title: 'Boquita de Caramelo', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg', file: new Audio('https://online.freemusicdownloads.world/get-file?fn=Rodolfo+Aicardi+con+Los+Hispanos+-+Boquita+de+Caramelo&pl=False&dt=MP3&vid=DI5QBaIZj1o'), isPlaying: false }
+        { active: true, title: 'Tremor', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg', file: new Audio('static/tremor.mp3'), isPlaying: false },
+        { active: true, title: 'Boquita de Caramelo', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg', file: new Audio('static/boquita.mp3'), isPlaying: false }
       ]
     }
   },

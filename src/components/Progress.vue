@@ -16,7 +16,7 @@
               >
                 <v-img
                   :aspect-ratio="16/9"
-                  src="https://cdn.pixabay.com/photo/2016/03/01/10/08/life-fitness-house-1230004_960_720.jpg"
+                  src="static/ach1.jpg"
                 ></v-img>
                 <v-card-title>
                   <div>
@@ -54,7 +54,7 @@
               >
                 <v-img
                   :aspect-ratio="16/9"
-                  src="https://images.unsplash.com/photo-1533094722813-3b99daa73237?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                  src="static/arch2.jpeg"
                 ></v-img>
                 <v-card-title>
                   <div>
@@ -92,7 +92,7 @@
               >
                 <v-img
                   :aspect-ratio="16/9"
-                  src="https://images.agoramedia.com/everydayhealth/gcms/Rehab-Options-for-Living-With-Multiple-Sclerosis-722x406.jpg"
+                  src="static/ach3.jpg"
                 ></v-img>
                 <v-card-title>
                   <div>
@@ -119,7 +119,7 @@
               </v-card>
             </v-hover> 
           </v-flex>    
-          
+
 
           <v-flex sm12>
             <h4 class="font-weight-thin display-2">Therapy Progress</h4>

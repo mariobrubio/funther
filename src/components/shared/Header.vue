@@ -167,7 +167,7 @@ export default {
   methods: {
     onLogout () {
       this.$store.dispatch('logout')
-      window.location.replace('./')
+      window.location.replace('./signin')
     }
   },
   computed: {

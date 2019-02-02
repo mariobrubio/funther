@@ -6,119 +6,76 @@
           <v-flex sm12>
             <h4 class="font-weight-thin display-2">Achievements</h4>
           </v-flex>       
-          <v-flex lg4 sm12 >
-            <v-hover>
-              <v-card
-                slot-scope="{ hover }"
-                :class="`elevation-${hover ? 12 : 2}`"
-                class="mx-auto"
-                width="344"
-              >
-                <v-img
-                  :aspect-ratio="16/9"
-                  src="static/ach1.jpg"
-                ></v-img>
-                <v-card-title>
-                  <div>
-                    <span class="headline">Beginner</span>
-                    <div class="d-flex">
+          <v-flex lg4 sm12>
+          <v-card>
+            <v-card-media src="/static/ach1.jpg" height="250">
+              
+            </v-card-media>
+            <v-card-text>
+              <span class="headline">Beginner</span>
+              <div class="text-xs-center">
                       <v-rating
                         :value="value1"
                         color="amber"
                         dense
                         half-increments
                         readonly
-                        size="14"
+                        size="20"
                       ></v-rating>
-                      <div class="ml-2 grey--text text--darken-2">
-                        <span>{{ value1 }}</span>
-                      </div>
+                      
                     </div>
-                  </div>
-                  <v-spacer></v-spacer>
-                  <v-btn icon class="mr-0">
-                    <v-icon>mdi-chevron-right</v-icon>
-                  </v-btn>
-                </v-card-title>
-              </v-card>
-            </v-hover>  
-          </v-flex>
+            </v-card-text>
+            <v-divider></v-divider>
+               
+          </v-card>
+        </v-flex>
 
-            <v-flex lg4 sm12>
-            <v-hover>
-              <v-card
-                slot-scope="{ hover }"
-                :class="`elevation-${hover ? 12 : 2}`"
-                class="mx-auto"
-                width="344"
-              >
-                <v-img
-                  :aspect-ratio="16/9"
-                  src="static/arch2.jpeg"
-                ></v-img>
-                <v-card-title>
-                  <div>
-                    <span class="headline">Intermediate</span>
-                    <div class="d-flex">
+           <v-flex lg4 sm12>
+          <v-card>
+            <v-card-media src="/static/arch2.jpeg" height="250">
+              
+            </v-card-media>
+            <v-card-text>
+              <span class="headline">Intermediate</span>
+              <div class="text-xs-center">
                       <v-rating
                         :value="value2"
                         color="amber"
                         dense
                         half-increments
                         readonly
-                        size="14"
+                        size="20"
                       ></v-rating>
-                      <div class="ml-2 grey--text text--darken-2">
-                        <span>{{ value2 }}</span>
-                      </div>
                     </div>
-                  </div>
-                  <v-spacer></v-spacer>
-                  <v-btn icon class="mr-0">
-                    <v-icon>mdi-chevron-right</v-icon>
-                  </v-btn>
-                </v-card-title>
-              </v-card>
-            </v-hover> 
-          </v-flex>      
+            </v-card-text>
+            <v-divider></v-divider>
+               
+          </v-card>
+        </v-flex>
 
             <v-flex lg4 sm12>
-            <v-hover>
-              <v-card
-                slot-scope="{ hover }"
-                :class="`elevation-${hover ? 12 : 2}`"
-                class="mx-auto"
-                width="344"
-              >
-                <v-img
-                  :aspect-ratio="16/9"
-                  src="static/ach3.jpg"
-                ></v-img>
-                <v-card-title>
-                  <div>
-                    <span class="headline">Expert</span>
-                    <div class="d-flex">
+          <v-card>
+            <v-card-media src="/static/ach3.jpg" height="250">
+              
+            </v-card-media>
+            <v-card-text>
+              <span class="headline">Expert</span>
+              <div class="text-xs-center">
                       <v-rating
                         :value="value3"
                         color="amber"
                         dense
                         half-increments
                         readonly
-                        size="14"
+                        size="20"
                       ></v-rating>
-                      <div class="ml-2 grey--text text--darken-2">
-                        <span>{{ value3 }}</span>
-                      </div>
+                      
                     </div>
-                  </div>
-                  <v-spacer></v-spacer>
-                  <v-btn icon class="mr-0">
-                    <v-icon>mdi-chevron-right</v-icon>
-                  </v-btn>
-                </v-card-title>
-              </v-card>
-            </v-hover> 
-          </v-flex>    
+            </v-card-text>
+            <v-divider></v-divider>
+               
+          </v-card>
+        </v-flex> 
 
 
           <v-flex sm12>

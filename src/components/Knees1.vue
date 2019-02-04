@@ -150,7 +150,7 @@ export default {
               clearInterval(this.interval)
               this.counter += 1
               this.showq = false
-              if (this.counter === 3) {
+              if (this.counter === 10) {
                 this.alert = true
                 return 0
               }

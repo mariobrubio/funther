@@ -27,22 +27,37 @@
                           :indeterminate="query"
                           :query="true"
                         ></v-progress-linear> 
+
                       </div>                
-                      <div>
-                        
-                        <v-alert
-                          :value="alert"
-                          type="success"
-                          transition="scale-transition"
-                        >
-                          Has terminado.
-                          <v-btn
-                            :to="'/songs'"
+                      
+                        <div class="text-xs-center">
+                          <v-dialog
+                            v-model="alert"
+                            
+                            width="500"
                           >
-                            Escucha tu canción
-                          </v-btn>
-                        </v-alert>
+                            <v-card>
+                              <v-card-text>
+                                <v-alert
+                                    :value="alert"
+                                    type="success"
+                                    transition="scale-transition"
+                                  >
+                                    Has terminado, ¡Desbloqueaste el primer track de tu canción!. Dale Play y escuchalo.
+                                    <div v-for="item in items"
+                                        :key="item.title">
+                                      <v-btn v-if="item.isPlaying" flat icon color="blue darken-3" @click="item.isPlaying ? pause(item) : play(item)">
+                                          <v-icon>pause_circle_filled</v-icon>           
+                                      </v-btn>
+                                      <v-btn v-else flat icon color="blue darken-3" @click="item.isPlaying ? pause(item) : play(item)"> <v-icon>play_circle_filled</v-icon>  </v-btn>
+                                    
+                                    </div>
+                                  </v-alert>
+                              </v-card-text>
+                            </v-card>
+                          </v-dialog>
                       </div>
+                      
                     </v-card>                    
                     </v-flex>
                         </v-layout>
@@ -97,7 +112,11 @@ export default {
         query: false,
         showq: true,
         interval: 0,
-        counter: 0
+        counter: 0,
+        items: [
+          { active: true, title: 'Back in Black', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg', file: new Audio('static/funther_base.mp3'),
+            isPlaying: false }
+        ]
       }
     },
 
@@ -110,7 +129,16 @@ export default {
     },
 
     methods: {
+      play (audio) {
+        audio.isPlaying = true
+        audio.file.play()
+      },
+      pause (audio) {
+        audio.isPlaying = false
+        audio.file.pause()
+      },
       queryAndIndeterminate () {
+        
         this.query = true
         this.showq = true
         this.value = 0

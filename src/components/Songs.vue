@@ -60,7 +60,8 @@ export default {
         { active: true, title: 'Back in Black', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg', file: new Audio('static/black.mp3'),
           isPlaying: false },
         { active: true, title: 'Tremor', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg', file: new Audio('static/tremor.mp3'), isPlaying: false },
-        { active: true, title: 'Boquita de Caramelo', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg', file: new Audio('static/boquita.mp3'), isPlaying: false }
+        { active: true, title: 'Boquita de Caramelo', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg', file: new Audio('static/boquita.mp3'), isPlaying: false },
+        { active: true, title: 'Funther Song 1', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg', file: new Audio('static/funther_FS3.mp3'), isPlaying: false }
       ]
     }
   },

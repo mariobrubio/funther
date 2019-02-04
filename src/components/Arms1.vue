@@ -19,7 +19,31 @@
                         </div>
                       </v-card-title>
                       <v-card-media src="/static/videos/hombro1.gif" height="350">
-                      </v-card-media>                      
+                      </v-card-media>     
+                      <div class="text-xs-center">
+                        <v-progress-linear
+                          v-model="value"
+                          color="error"
+                          :active="showq"
+                          :indeterminate="query"
+                          :query="true"
+                        ></v-progress-linear> 
+                      </div>                
+                      <div>
+                        
+                        <v-alert
+                          :value="alert"
+                          type="success"
+                          transition="scale-transition"
+                        >
+                          Has terminado.
+                          <v-btn
+                            :to="'/songs'"
+                          >
+                            Escucha tu canción
+                          </v-btn>
+                        </v-alert>
+                      </div>                 
                     </v-card>                    
                     </v-flex>
                         </v-layout>
@@ -59,15 +83,50 @@ export default {
   components: {
     VWidget
   },
-  data () {
-    return {
-      page: 1,
-      show: false
+      data () {
+      return {
+        page: 1,
+        show: false,
+        value: 0,
+        alert: false,
+        query: false,
+        showq: true,
+        interval: 0,
+        counter: 0
+      }
+    },
+
+    mounted () {
+      this.queryAndIndeterminate()
+    },
+
+    beforeDestroy () {
+      clearInterval(this.interval)
+    },
+
+    methods: {
+      queryAndIndeterminate () {
+        this.query = true
+        this.showq = true
+        this.value = 0
+        setTimeout(() => {
+          this.query = false
+
+          this.interval = setInterval(() => {
+            if (this.value === 100) {
+              clearInterval(this.interval)
+              this.counter += 1
+              this.showq = false
+              if (this.counter === 3) {
+                this.alert = true
+                return 0
+              }
+              return setTimeout(this.queryAndIndeterminate, 2000)
+            }
+            this.value += 10
+          }, 1000)
+        }, 2500)
+      }
     }
-  },
-  computed: {
-  },
-  methods: {
-  }
 }
 </script>

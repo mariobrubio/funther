@@ -14,8 +14,7 @@
                           <div align-center justify-center class="headline">Funther</div>
                         </div>
                       </v-card-title>
-                      <v-card-text><h4 class="font-weight-thin regular">En esta aplicación, puedes realizar tus terapias sin aburrirte. Hay un montón de ejercicios para hacer. Para cada repetición que hagas, se genera un sonido de una canción específica, al final de la rutina, la canción se completa y estará lista para que la escuches.<br>
-Para comenzar, ponte el dispositivo Funther, una vez que comiences a hacer el ejercicio, los sensores incorporados reconocerán la actividad y, al final de la terapia, ¡se generará la canción!</h4></v-card-text>
+                      <v-card-text><h4 class="font-weight-thin regular">En Funther, puedes realizar tus terapias sin aburrirte. Para comenzar ponte el dispositivo Funther, una vez que comiences a hacer el ejercicio, los sensores incorporados reconocerán la actividad y, al final de la terapia, ¡se generará la canción!<br>¿Qué esperas? Hay un montón de ejercicios para hacer</h4></v-card-text>
                       <v-card-media src="/static/johy.gif" height="350">
                       </v-card-media>
                       <v-btn :to="'/exercises'" large>Iniciar</v-btn>  

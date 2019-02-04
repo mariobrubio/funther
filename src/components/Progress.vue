@@ -3,80 +3,54 @@
     <v-container grid-list-xl fluid>
         <v-layout row wrap>
 
-          <v-flex sm12>
-            <h4 class="font-weight-thin display-2">Logros</h4>
-          </v-flex>       
-          <v-flex lg4 sm12>
+        <v-flex sm12>
+          <h3 class="font-weight-thin display-2">Logros</h3>
+        </v-flex>        
+        <v-flex lg4 sm12>
           <v-card>
             <v-card-media src="/static/ach1.jpg" height="250">
               
             </v-card-media>
             <v-card-text>
-              <span class="headline">Principiante</span>
-              <div class="text-xs-center">
-                <v-rating
-                  :value="value1"
-                  color="amber"
-                  dense
-                  half-increments
-                  readonly
-                  size="20"
-                ></v-rating>
-                
-              </div>
+              <span class="headline">Principiante</span><br>
+              Conseguiste este logro al haber realizado satisfactoriamente 20 terapias. ¡Felicitaciones!
             </v-card-text>
             <v-divider></v-divider>
-               
+            
           </v-card>
         </v-flex>
 
-           <v-flex lg4 sm12>
+
+        <v-flex lg4 sm12>
           <v-card>
             <v-card-media src="/static/arch2.jpeg" height="250">
               
             </v-card-media>
             <v-card-text>
-              <span class="headline">Intermedio</span>
-              <div class="text-xs-center">
-                <v-rating
-                  :value="value2"
-                  color="amber"
-                  dense
-                  half-increments
-                  readonly
-                  size="20"
-                ></v-rating>
-              </div>
+              <span class="headline">Intermedio</span><br>
+              Conseguiste este logro al haber realizado satisfactoriamente 40 terapias. ¡Felicitaciones!
+            </v-card-text>
+            <v-divider></v-divider>
+            
+          </v-card>
+        </v-flex>
+
+
+        <v-flex lg4 sm12>
+          <v-card>
+            <v-card-media src="/static/ach3.jpg" height="250">
+              
+            </v-card-media>
+            <v-card-text>
+              <span class="headline">Experto</span><br>
+              Conseguiste este logro al haber realizado satisfactoriamente 60 terapias. ¡Felicitaciones!
             </v-card-text>
             <v-divider></v-divider>
                
           </v-card>
         </v-flex>
 
-            <v-flex lg4 sm12>
-          <v-card>
-            <v-card-media src="/static/ach3.jpg" height="250">
-              
-            </v-card-media>
-            <v-card-text>
-              <span class="headline">Experto</span>
-              <div class="text-xs-center">
-                <v-rating
-                  :value="value3"
-                  color="amber"
-                  dense
-                  half-increments
-                  readonly
-                  size="20"
-                ></v-rating>
-                
-              </div>
-            </v-card-text>
-            <v-divider></v-divider>
-               
-          </v-card>
-        </v-flex> 
-
+          
 
           <v-flex sm12>
             <h4 class="font-weight-thin display-2">Progreso de la Terapia</h4>
@@ -87,20 +61,9 @@
               class="mt-3 mx-auto"
               max-width="400"
             >
-              <v-sheet
-                class="v-sheet--offset mx-auto"
-                color="cyan"
-                elevation="12"
-                max-width="calc(100% - 32px)"
-              >
-                <v-sparkline
-                  :labels="labels"
-                  :value="value"
-                  color="white"
-                  line-width="2"
-                  padding="16"
-                ></v-sparkline>
-              </v-sheet>
+              <v-card-media src="/static/graph1.png" height="100">
+              
+            </v-card-media>
 
               <v-card-text class="pt-0">
                 <div class="title font-weight-light mb-2">Progreso Total</div>

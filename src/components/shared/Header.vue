@@ -26,7 +26,7 @@
           no-action
         >
           <v-list-tile slot="activator" :to="'/exercises'">
-            <v-list-tile-title>Exercises</v-list-tile-title>
+            <v-list-tile-title>Ejercicios</v-list-tile-title>
           </v-list-tile>
           <v-list-group
           no-action
@@ -34,7 +34,7 @@
           value="true"
           >
           <v-list-tile slot="activator">
-            <v-list-tile-title>Arms</v-list-tile-title>
+            <v-list-tile-title>Hombro</v-list-tile-title>
           </v-list-tile>
 
             <v-list-tile
@@ -55,7 +55,7 @@
           value="true"
           >
           <v-list-tile slot="activator">
-            <v-list-tile-title>Knees</v-list-tile-title>
+            <v-list-tile-title>Rodilla</v-list-tile-title>
           </v-list-tile>
 
             <v-list-tile
@@ -80,7 +80,7 @@
             <v-icon>audiotrack</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Songs</v-list-tile-title>
+            <v-list-tile-title>Canciones</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
     </v-list>
@@ -93,7 +93,7 @@
             <v-icon>exit_to_app</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Logout</v-list-tile-title>
+            <v-list-tile-title>Cerrar Sesión</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
     </v-list>
@@ -149,18 +149,18 @@ export default {
         { title: 'Settings', link: '/settings' }
       ],
       menuItems: [
-        { icon: 'home', title: 'Home', link: '/signup' },
-        { icon: 'trending_up', title: 'Progress', link: '/progress' }
+        { icon: 'home', title: 'Inicio', link: '/signup' },
+        { icon: 'trending_up', title: 'Progreso', link: '/progress' }
       ],
       knees: [
-        ['Knees 1', 'launch', '/knees1'],
-        ['Knees 2', 'launch', '/knees2'],
-        ['Knees 3', 'launch', '/knees3']
+        ['Rodilla 1', 'launch', '/knees1'],
+        ['Rodilla 2', 'launch', '/knees2'],
+        ['Rodilla 3', 'launch', '/knees3']
       ],
       arms: [
-        ['Arms 1', 'launch', '/arms1'],
-        ['Arms 2', 'launch', '/arms2'],
-        ['Arms 3', 'launch', '/arms3']
+        ['Hombro 1', 'launch', '/arms1'],
+        ['Hombro 2', 'launch', '/arms2'],
+        ['Hombro 3', 'launch', '/arms3']
       ]
     }
   },

@@ -7,21 +7,41 @@
               <v-parallax src="/static/bg/24.jpg" height="700">
                   <v-layout  align-center justify-center >
                     
-                    <v-flex d-flex xs12 sm6 md4>
+                    <v-fade-transition mode="out-in">
+                  <v-layout v-if="show" key="0" wrap align-center justify-center>
+                  <v-flex d-flex xs12 sm6 md4>
                     <v-card color="cyan darken-3" class="white--text">
                       <v-card-title primary-title>
                         <div>
-                          <div class="headline">Funther</div>
-                          <span>In this application, you can perform your therapies without being bored. There are plenty of exercises to do. For each repetition you make, a sound of an specific sound is generated, at the end of the routine, the final song is completed and ready for you to listen it!</span>
-                          <span>To start, put the Funther Device on, once you start doing the exercise, the built in sensors on it would recognize the activity and by the end of the therapy it would generate the song!</span>
+                          <div class="headline">Pendulares Delante-Atrás</div>
+                          <span>De pie, nos apoyamos sobre una mesa con la mano sana, nos inclinamos y realizamos movimientos hacia un lado y hacia el otro.</span><br>
+                          <span>10 repeticiones en el menor tiempo posible</span>
                         </div>
                       </v-card-title>
-                      <v-card-media src="/static/johy.gif" height="350">
-                      </v-card-media>
-                      <v-btn :to="'/exercises'" large>Get Started</v-btn>    
-                    </v-card>
+                      <v-card-media src="/static/videos/hombro2.gif" height="350">
+                      </v-card-media>                      
+                    </v-card>                    
                     </v-flex>
-                    
+                        </v-layout>
+
+                    <v-layout v-else key="1" justify-center align-center>
+                      <v-card color="cyan darken-3" class="white--text">
+                      <v-card-title primary-title>
+                        <div>
+                          <div class="headline">Pendulares Delante-Atrás</div>
+                          <span>De pie, nos apoyamos sobre una mesa con la mano sana, nos inclinamos y realizamos movimientos hacia un lado y hacia el otro.</span><br>
+                          <span>10 repeticiones en el menor tiempo posible</span>
+                        </div>
+                      </v-card-title>
+                      <v-card-media src="/static/hombro2.png" height="350">
+                      </v-card-media>
+                      
+
+                          <v-btn large @click="show = true">Empezar</v-btn>
+                          <v-btn :to="'/exercises'" large>Volver</v-btn>
+                    </v-card>
+                        </v-layout>
+                      </v-fade-transition>
                   </v-layout>
                
               </v-parallax>
@@ -41,7 +61,8 @@ export default {
   },
   data () {
     return {
-      page: 1
+      page: 1,
+      show: false
     }
   },
   computed: {

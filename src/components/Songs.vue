@@ -4,13 +4,13 @@
         <v-layout row wrap>
 
           <v-flex sm12>
-            <h4 class="font-weight-thin display-2">Generated Songs</h4>
+            <h4 class="font-weight-thin display-2">Canciones Generadas</h4>
           </v-flex>          
           <v-flex lg4 sm12>
           
           <v-flex sm12>  
             <v-list subheader>
-            <v-subheader>Songs</v-subheader>
+            <v-subheader>Canciones</v-subheader>
             <v-list-tile
               v-for="item in items"
               :key="item.title"

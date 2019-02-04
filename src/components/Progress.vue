@@ -4,7 +4,7 @@
         <v-layout row wrap>
 
           <v-flex sm12>
-            <h4 class="font-weight-thin display-2">Achievements</h4>
+            <h4 class="font-weight-thin display-2">Logros</h4>
           </v-flex>       
           <v-flex lg4 sm12>
           <v-card>
@@ -12,7 +12,7 @@
               
             </v-card-media>
             <v-card-text>
-              <span class="headline">Beginner</span>
+              <span class="headline">Principiante</span>
               <div class="text-xs-center">
                 <v-rating
                   :value="value1"
@@ -36,7 +36,7 @@
               
             </v-card-media>
             <v-card-text>
-              <span class="headline">Intermediate</span>
+              <span class="headline">Intermedio</span>
               <div class="text-xs-center">
                 <v-rating
                   :value="value2"
@@ -59,7 +59,7 @@
               
             </v-card-media>
             <v-card-text>
-              <span class="headline">Expert</span>
+              <span class="headline">Experto</span>
               <div class="text-xs-center">
                 <v-rating
                   :value="value3"
@@ -79,7 +79,7 @@
 
 
           <v-flex sm12>
-            <h4 class="font-weight-thin display-2">Therapy Progress</h4>
+            <h4 class="font-weight-thin display-2">Progreso de la Terapia</h4>
           </v-flex>          
           <v-flex lg4 sm12>
             
@@ -103,7 +103,7 @@
               </v-sheet>
 
               <v-card-text class="pt-0">
-                <div class="title font-weight-light mb-2">Total Progress</div>
+                <div class="title font-weight-light mb-2">Progreso Total</div>
                 <v-divider class="my-2"></v-divider>
                 <v-icon
                   class="mr-2"
@@ -111,7 +111,7 @@
                 >
                   timeline
                 </v-icon>
-                <span class="caption grey--text font-weight-light">Progress vs Time Graph</span>
+                <span class="caption grey--text font-weight-light">Gráfica de Progreso vs Tiempo</span>
               </v-card-text>
             </v-card>
   
@@ -121,8 +121,8 @@
             <v-card color="blue-grey darken-2" class="white--text">
               <v-card-title primary-title>
                 <div>
-                  <div class="headline">24 Sessions Remaining</div>
-                  <span>To complete your recover process after post-operatory you must complete 60 full sessions of intense therapy.</span>
+                  <div class="headline">24 Sesiones Faltantes</div>
+                  <span>Para completar tu proceso recuperatorio luego del post-operatorio, debes completar al menos 60 sesiones completas de terapia intensiva.</span>
                 </div>
               </v-card-title>
             </v-card>
@@ -133,8 +133,8 @@
             <v-card color="blue darken-2" class="white--text">
               <v-card-title primary-title>
                 <div>
-                  <div class="headline">36 Songs Generated</div>
-                  <span>You have successfuly finished 36 therapy sessions, that means that you have generated 36 songs with your exercises!</span>
+                  <div class="headline">36 Canciones Generadas</div>
+                  <span>¡Haz terminado correctamente 36 sesiones de terapia, lo que significa que has generado 36 canciones con tus ejercicios!</span>
                 </div>
               </v-card-title>
             </v-card>
@@ -145,7 +145,7 @@
           
           <!-- circle statistic  end -->  
           <v-flex sm12>
-            <h4 class="font-weight-thin display-2">Progress by Quarter</h4>
+            <h4 class="font-weight-thin display-2">Progreso por temporada</h4>
           </v-flex>       
           <v-flex lg4 sm12 v-for="(item,index) in trending2" :key="'c-trending'+index">
             <circle-statistic
@@ -196,9 +196,9 @@ export default {
       ],
       trending2: [
         {
-          subheading: 'First Quarter',
+          subheading: 'Primer Trimestre',
           headline: '100%',
-          caption: 'of Sessions.',
+          caption: 'de Sesiones.',
           percent: 100,
           icon: {
             label: 'check_circle',
@@ -210,9 +210,9 @@ export default {
           }
         },
         {
-          subheading: 'Second Quarter',
+          subheading: 'Segundo Trimestre',
           headline: '90%',
-          caption: 'of Sessions.',
+          caption: 'de Sesiones.',
           percent: 90,
           icon: {
             label: 'check_circle_outline',
@@ -224,9 +224,9 @@ export default {
           }
         },
         {
-          subheading: 'Third Quarter',
+          subheading: 'Tercer Trimestre',
           headline: '0%',
-          caption: 'of Sessions.',
+          caption: 'de Sesiones.',
           percent: 0,
           icon: {
             label: 'check_circle_outline',

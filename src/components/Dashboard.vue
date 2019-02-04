@@ -11,14 +11,14 @@
                     <v-card color="blue-grey darken-2" class="white--text">
                       <v-card-title primary-title>
                         <div>
-                          <div class="headline">Funther</div>
-                          <span>In this application, you can perform your therapies without being bored. There are plenty of exercises to do. For each repetition you make, a sound of an specific sound is generated, at the end of the routine, the final song is completed and ready for you to listen it!</span>
-                          <span>To start, put the Funther Device on, once you start doing the exercise, the built in sensors on it would recognize the activity and by the end of the therapy it would generate the song!</span>
+                          <div align-center justify-center class="headline">Funther</div>
                         </div>
                       </v-card-title>
+                      <v-card-text><h4 class="font-weight-thin regular">En esta aplicación, puedes realizar tus terapias sin aburrirte. Hay un montón de ejercicios para hacer. Para cada repetición que hagas, se genera un sonido de una canción específica, al final de la rutina, la canción se completa y estará lista para que la escuches.<br>
+Para comenzar, ponte el dispositivo Funther, una vez que comiences a hacer el ejercicio, los sensores incorporados reconocerán la actividad y, al final de la terapia, ¡se generará la canción!</h4></v-card-text>
                       <v-card-media src="/static/johy.gif" height="350">
                       </v-card-media>
-                      <v-btn :to="'/exercises'" large>Get Started</v-btn>    
+                      <v-btn :to="'/exercises'" large>Iniciar</v-btn>  
                     </v-card>
                     </v-flex>
                     

@@ -3,23 +3,23 @@
     <v-container grid-list-xl fluid>
       <v-layout row wrap>
         <v-flex sm12>
-          <h3 class="font-weight-thin display-2">Custom Exercises</h3>
+          <h3 class="font-weight-thin display-2">Ejercicios personalizados</h3>
         </v-flex>        
         <v-flex lg4 sm12>
           <v-card>
-            <v-card-media src="/static/bg/8.jpg" height="250">
+            <v-card-media src="/static/rodilla1.png" height="250">
               <h2 class="white--text pa-3">
-                Card with image
+                Flexión de Rodilla 1
               </h2>
             </v-card-media>
             <v-card-text>
               <div>
-                {{cardText}}
+                Acostado sobre el vientre, flexionar la rodilla intentando llegar a tocar el glúteo con el talón del pie.
               </div>
             </v-card-text>
             <v-divider></v-divider>
             <v-card-actions>
-              <v-btn flat small>Link</v-btn>
+              <v-btn :to="'/knees1'" flat small>¡Ir al Ejercicio!</v-btn>
             </v-card-actions>   
           </v-card>
         </v-flex>
@@ -27,9 +27,9 @@
 
         <v-flex lg4 sm12>
           <v-card>
-            <v-card-media src="/static/nature/n3.jpeg" height="250">
+            <v-card-media src="/static/rodilla2.png" height="250">
               <h2 class="white--text pa-3">
-                Card with image
+                Flexión de Rodilla 2
               </h2>
             </v-card-media>
             <v-card-text>
@@ -37,12 +37,12 @@
                 <img src="/static/avatar/man_2.jpg" alt="">
               </v-avatar>
               <div>
-               {{cardText}}
+               Sentado y con un rodillo o toalla bajo la rodilla, se eleva la pierna lentamente todo lo que se pueda.
               </div>              
             </v-card-text>
             <v-divider></v-divider>
             <v-card-actions>
-              <v-btn flat small>Link</v-btn>
+              <v-btn :to="'/knees2'" flat small>¡Ir al Ejercicio!</v-btn>
             </v-card-actions>   
           </v-card>
         </v-flex>
@@ -50,76 +50,76 @@
 
         <v-flex lg4 sm12>
           <v-card>
-            <v-card-media src="/static/nature/n4.jpeg" height="250">
+            <v-card-media src="/static/rodilla3.png" height="250">
               <h2 class="white--text pa-3">
-                Card with image
+                Flexión de Rodilla 3
               </h2>
             </v-card-media>
             <v-card-text>
               <div>
-                {{cardText}}
+                Tumbado boca arriba, flexionar la rodilla hasta 90º (ángulo recto) y luego estirar la pierna de nuevo.
               </div>
             </v-card-text>
             <v-divider></v-divider>
             <v-card-actions>
-              <v-btn flat small>Link</v-btn>
+              <v-btn :to="'/knees3'" flat small>¡Ir al Ejercicio!</v-btn>
             </v-card-actions>   
           </v-card>
         </v-flex>
 
         <v-flex lg4 sm12>
           <v-card>
-            <v-card-media src="/static/nature/n4.jpeg" height="250">
+            <v-card-media src="/static/hombro1.png" height="250">
               <h2 class="white--text pa-3">
-                Card with image
+                Pendulares Circulares
               </h2>
             </v-card-media>
             <v-card-text>
               <div>
-                {{cardText}}
+                De pie, nos apoyamos con la mano sana, nos inclinamos y realizamos movimientos circulares en ambos sentidos.
               </div>
             </v-card-text>
             <v-divider></v-divider>
             <v-card-actions>
-              <v-btn flat small>Link</v-btn>
+              <v-btn :to="'/arms1'" flat small>¡Ir al Ejercicio!</v-btn>
             </v-card-actions>   
           </v-card>
         </v-flex>
 
         <v-flex lg4 sm12>
           <v-card>
-            <v-card-media src="/static/nature/n4.jpeg" height="250">
+            <v-card-media src="/static/hombro2.png" height="250">
               <h2 class="white--text pa-3">
-                Card with image
+                Pendulares Delante-Atrás
               </h2>
             </v-card-media>
             <v-card-text>
               <div>
-                {{cardText}}
+                De pie, nos apoyamos con la mano sana, nos inclinamos y realizamos movimientos hacia un lado y hacia el otro.
               </div>
             </v-card-text>
             <v-divider></v-divider>
             <v-card-actions>
-              <v-btn flat small>Link</v-btn>
+              <v-btn :to="'/arms2'" flat small>¡Ir al Ejercicio!</v-btn>
             </v-card-actions>   
           </v-card>
         </v-flex>
 
         <v-flex lg4 sm12>
           <v-card>
-            <v-card-media src="/static/nature/n4.jpeg" height="250">
+            <v-card-media src="/static/hombro3.png" height="250">
               <h2 class="white--text pa-3">
-                Card with image
+                Estiramientos Posteriores
               </h2>
             </v-card-media>
             <v-card-text>
               <div>
-                {{cardText}}
+                Pasamos la mano del brazo afectado por encima del hombro contrario, colocando la mano del brazo sano sobre el codo.
               </div>
             </v-card-text>
             <v-divider></v-divider>
             <v-card-actions>
-              <v-btn flat small>Link</v-btn>
+              <v-btn :to="'/arms3'" flat small>¡Ir al Ejercicio!</v-btn>
             </v-card-actions>   
           </v-card>
         </v-flex>
